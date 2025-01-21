@@ -2,3 +2,36 @@ https://github.com/cursodsousa/fullstack-react-spring-2024
 
 https://start.spring.io/
 
+-----------------------------------------------------------
+
+https://react.dev/
+
+https://nextjs.org/docs/app/getting-started/installation
+
+----------------------------------------------------------
+
+Criando aplicação react/next
+
+npx create-next-app@13.4.12 imagelite --use-npm
+
+Would you like to use TypeScript? Yes
+Would you like to use ESLint? No
+Would you like to use Tailwind CSS? Yes
+Would you like to use 'src/' directory? Yes
+Would you like to use App Router? Yes
+Would you like to customize the default import alias? No
+
+-----------------------------------------------------------
+
+Rodando script de dev
+
+npm run dev
+
+executar no navegador em localhost:3000
+
+----------------------------------------------------------
+
+
+
+
+

@@ -1,6 +1,8 @@
 imageliteapi/target/
 imageliteapi/.idea/
 
+imagelite/node_modules/
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
