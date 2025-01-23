@@ -31,14 +31,32 @@ executar no navegador em localhost:3000
 
 ----------------------------------------------------------
 
-CSS
-
-https://tailwindui.com/
-
-----------------------------------------------------------
-
 Next fetch
 
 https://nextjs.org/docs/app/building-your-application/data-fetching/fetching
 
 ---------------------------------------------------------
+
+Tailwind CSS
+
+https://tailwindui.com/
+
+---------------------------------------------------------
+
+Flowbite - Suíte de Componentes Tailwind
+
+https://flowbite.com/
+
+---------------------------------------------------------
+
+Formik
+
+https://formik.org/docs/guides/typescript
+
+----------------------------------------------------------
+
+React-Toastify
+
+https://fkhadra.github.io/react-toastify/introduction/
+
+-------------------------------------------------------
