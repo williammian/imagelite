@@ -53,6 +53,8 @@ Formik
 
 https://formik.org/docs/guides/typescript
 
+npm install --save formik@2.4.5 yup@1.2.0
+
 ----------------------------------------------------------
 
 React-Toastify
