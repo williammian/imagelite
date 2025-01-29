@@ -61,4 +61,6 @@ React-Toastify
 
 https://fkhadra.github.io/react-toastify/introduction/
 
+npm install --save react-toastify@9.1.3 -> 10.0.6
+
 -------------------------------------------------------
