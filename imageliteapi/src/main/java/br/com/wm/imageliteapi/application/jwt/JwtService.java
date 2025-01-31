@@ -55,7 +55,6 @@ public class JwtService {
             Jws<Claims> jwsClaims = build.parseSignedClaims(tokenJwt);
             Claims claims = jwsClaims.getPayload();
             return claims.getSubject();
-
         }catch (JwtException e){
             throw new InvalidTokenException(e.getMessage());
         }

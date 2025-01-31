@@ -37,12 +37,11 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(cors -> cors.configure(http))
                 .authorizeHttpRequests( auth -> {
+                    //auth.anyRequest().permitAll();
 
-                    auth.anyRequest().permitAll(); //temporário
-
-                    //auth.requestMatchers("/v1/users/**").permitAll();
-                    //auth.requestMatchers(HttpMethod.GET, "/v1/images/**").permitAll();
-                    //auth.anyRequest().authenticated();
+                    auth.requestMatchers("/v1/users/**").permitAll();
+                    auth.requestMatchers(HttpMethod.GET, "/v1/images/**").permitAll();
+                    auth.anyRequest().authenticated();
 
                 })
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)

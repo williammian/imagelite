@@ -74,3 +74,9 @@ Biblioteca
 https://github.com/jwtk/jjwt
 
 ------------------------------------------------------
+
+JWT Decode (front)
+
+npm install --save jwt-decode@3.1.2
+
+-----------------------------------------------------
