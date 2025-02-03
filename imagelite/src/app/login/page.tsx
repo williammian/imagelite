@@ -103,7 +103,8 @@ export default function Login(){
                         <div className='mt-2'>
                             <InputText style='w-full' 
                                        type="password"
-                                       id='password' 
+                                       id="password" 
+                                       autocomplete="true"
                                        value={values.password}
                                        onChange={handleChange}/>
                             <FieldError error={errors.password} />

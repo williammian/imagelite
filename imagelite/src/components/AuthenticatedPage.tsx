@@ -1,5 +1,8 @@
+'use client'
+
 import Login from '@/app/login/page';
-import { useAuth } from '@/resources'
+import { useAuth } from '@/resources';
+import { useEffect, useState } from 'react';
 
 interface AuthenticatedPageProps {
     children: React.ReactNode
@@ -10,11 +13,19 @@ export const AuthenticatedPage: React.FC<AuthenticatedPageProps> = ({
 }) => {
 
     const auth = useAuth();
+    const [isValid, setIsValid] = useState<boolean | null>(null);
 
-    if(!auth.isSessionValid()){
-        return <Login />
+    useEffect(() => {
+        setIsValid(auth.isSessionValid());
+    }, []);
+
+    if (isValid === null) {
+        return <p>Loading...</p>; // Evita erro de renderização antes da validação do token
     }
 
+    if (!isValid) {
+        return <Login />;
+    }
 
     return (
         <>
