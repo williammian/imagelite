@@ -1,0 +1,48 @@
+https://nextjs.org/docs/app/building-your-application/configuring/environment-variables
+
+Na raiz do projeto criar o arquivo .env
+
+Conteúdo:
+
+NEXT_PUBLIC_API_URL=http://localhost:8080
+
+--------------------------------------------
+
+image.service.ts
+
+baseURL: string = process.env.NEXT_PUBLIC_API_URL + '/v1/images';
+
+--------------------------------------------
+
+authentication.service.ts
+
+baseURL: string = process.env.NEXT_PUBLIC_API_URL + '/v1/users';
+
+--------------------------------------------
+
+Build
+
+package.json
+
+npm run build
+
+Arquivos criados na pasta .next
+
+----------------------------------------------
+
+Para executar em cima de um build
+
+npm run start
+
+--------------------------------------------
+
+Comando para o Docker criar a imagem (local)
+Estando na raiz do projeto
+
+docker build -t williammian/imageliteapp .
+
+ -t é para nomear a imagem
+
+ . (espaço ponto) é para pegar o diretório raiz, atual
+ 
+---------------------------------------------------------------

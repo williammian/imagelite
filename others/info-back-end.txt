@@ -30,6 +30,10 @@ No terminal, na pasta raiz do projeto
 Porque mvnw? wrapper
 
 jar fica na pasta target
+
+ou rodar 
+
+mvn clean package
 	
 ----------------------------------------------------------------
 
