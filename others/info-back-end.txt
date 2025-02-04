@@ -1,0 +1,53 @@
+Intellij
+
+Run/Debug Configurations
+	
+	Environment variables : POSTGRES_HOST=localhost:5433
+
+	Modify options
+
+	Add VM Options
+	
+		VM Options : -Dspring.profiles.active=production
+		
+		
+-----------------------------------------------------------------
+
+Build (package jar)
+
+Maven
+
+	Execute Maven Goal
+	
+		Executar: mvn clean package
+		
+ou
+
+No terminal, na pasta raiz do projeto
+
+	Executar: ./mvnw clean package -DskipTests
+	
+Porque mvnw? wrapper
+
+jar fica na pasta target
+	
+----------------------------------------------------------------
+
+Rodar jar
+
+Entrar na pasta target
+
+java -jar .\imageliteapi-0.0.1-SNAPSHOT.jar
+
+---------------------------------------------------------------
+
+Comando para o Docker criar a imagem (local)
+Estando na raiz do projeto
+
+docker build -t williammian/imageliteapi .
+
+ -t é para nomear a imagem
+
+ . (espaço ponto) é para pegar o diretório raiz, atual
+ 
+---------------------------------------------------------------
