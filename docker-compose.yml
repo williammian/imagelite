@@ -40,6 +40,19 @@ services:
       - imagelitenetwork
     environment:
       - "POSTGRES_HOST=db:5432"
+  
+  app:
+    image: williammian/imageliteapp
+    container_name: imageliteapp
+    restart: on-failure
+    depends_on:
+      - sbootapp
+    ports:
+      - '3000:3000'
+    networks:
+      - imagelitenetwork
+    expose:
+      - 3000
 
 volumes:
     pgdata:
